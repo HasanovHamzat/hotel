@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link as="font"
+    href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="preload" >
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar navbar--mobile_fixed">
+        <div class="container">
+            <div class="navbar-top">
+                <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
+                    <img 
+                    src="img/horizontal-logo.svg" 
+                    alt="logo: Best Tour Plan" 
+                    class="logo__image">
+                </a>
+
+               <form data-aos="fade-right" data-aos-delay="200" action="#" class="search navbar__search navbar__search--mobile_hidden">
+                   <input type="text" class="search__input"
+                   placeholder="Search Location"
+                   >
+                   <button class="search__button">
+                       <img src="img/search.svg" alt="Icon: search">
+                   </button>
+               </form>
+                
+               <a href="#" class="user navbar__user navbar__user--mobile_hidden" data-aos="fade-right" data-aos-delay="300">
+                   <img 
+                   src="img/user-avatar.jpg" 
+                   alt="avatar: Nathan" 
+                   class="user__avatar">
+                   <span class="user__name">Nathan</span>
+               </a>
+               <!-- /.user -->
+               <button class="menu-button navbar-top__menu-button">
+                   <span class="menu-button__line"></span>
+                   <span class="menu-button__line"></span>
+                   <span class="menu-button__line"></span>
+               </button>
+            </div>
+            <!-- /.navbar-top -->
+        </div>
+        <!-- /.container -->
+        <div class="navbar-bottom">
+            <div class="container">
+                <ul class="navbar-menu">
+                    <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                        <a href="#" class="user navbar__user navbar__user--mobile_visible">
+                            <img 
+                            src="img/user-avatar.jpg" 
+                            alt="avatar: Nathan" 
+                            class="user__avatar">
+                            <span class="user__name user__name--light">Nathan</span>
+                        </a>
+                    </li>
+                    <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                        <form action="#" class="search navbar__search navbar__search--mobile_visible">
+                            <input type="text" class="search__input"
+                            placeholder="Search Location"
+                            >
+                            <button class="search__button">
+                                <img src="img/search.svg" alt="Icon: search">
+                            </button>
+                        </form>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">All Deals</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Hotels</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Activities</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Restaurants</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Events</a>
+                    </li>
+                    <li class="navbar-menu__item">
+                        <a href="#" class="navbar-menu__link">Rodrigues</a>
+                    </li>
+                </ul>
+                <!-- /.navbar-menu -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.navbar-bottom -->
+    </header>
+    <nav class="breadcrumb">
+        <div class="container">
+            <ul class="breadcrumb-list">
+                <li class="breadcrumb-list__item">
+                    <a href="#" class="breadcrumb-list__link">Home</a>
+                </li>
+                <li class="breadcrumb-list__item">
+                    <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+                </li>
+                <li class="breadcrumb-list__item">
+                        Grand Hilton Hotel
+                </li>
+            </ul>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- /.breadcrumb -->
+    <section class="hotel">
+        <div class="container">
+            <div class="hotel-info">
+                <div class="hotel-info__text">
+                    <div class="hotel-wrapper">
+                        <div class="stars">
+                            <img src="img/star.svg" alt="star">
+                            <img src="img/star.svg" alt="star">
+                            <img src="img/star.svg" alt="star">
+                            <img src="img/star.svg" alt="star">
+                            <img src="img/star.svg" alt="star">
+                        </div>
+                        <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
+                        <span class="offer hotel-info__offer">Flash Offer</span>
+                    </div>
+                    <!-- /.hotel-wrapper -->
+                    <p class="hotel-description hotel-info__description">
+                        Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free
+                    </p>
+                </div>
+                <!-- /.hotel-info__text -->
+                <div class="rating hotel-info__rating">
+                    <span class="rating__text">User Rattings</span>
+                    <span class="rating__counter">4.5/5</span>
+                </div>
+                <!-- /.hotel-info__rating -->
+            </div>
+            <!-- /.hotel-info -->
+            <div class="hotel-grid">
+                    <!-- Slider main container -->
+                    <div class="swiper-container hotel-slider hotel__slider">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide hotel-slider__item">
+                                <img class="hotel-slider__image" src="img/slide/slide-1.jpg" alt="slide">
+                            </div>
+                            <div class="swiper-slide hotel-slider__item">
+                                <img class="hotel-slider__image" src="img/slide/slide-2.jpg" alt="slide">
+                            </div>
+                            <div class="swiper-slide hotel-slider__item">
+                                <img class="hotel-slider__image" src="img/slide/slide-3.jpg" alt="slide">
+                            </div>
+                            <div class="swiper-slide hotel-slider__item">
+                                <img class="hotel-slider__image" src="img/slide/slide-4.jpg" alt="slide">
+                            </div>
+                        </div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <button class="hotel-slider__button hotel-slider__button--prev"></button>
+                        <button class="hotel-slider__button hotel-slider__button--next"></button>
+                    </div>
+                    <!-- /.swiper-container -->
+
+                <div class="hotel-right">
+                    <div class="booking">
+                        <div class="booking__info">
+                            <div class="booking__price">
+                                <span class="booking__start">price starts as</span>
+                                <strong class="booking__pricetag">$ 8,500</strong>
+                                <span class="booking__per-room">per room / night</span>
+                            </div>
+                            <!-- /.booking__price -->
+                            <div class="booking__room">
+                                <div class="booking__text">
+                                    <img 
+                                    src="img/user/user.svg" 
+                                    alt="Icon: user" 
+                                    class="booking__icon">
+                                    <span class="booking__description">2 x Guests</span>
+                                </div>
+                                <div class="booking__text">
+                                    <img 
+                                    src="img/user/home.svg" 
+                                    alt="Icon: home" 
+                                    class="booking__icon">
+                                    <span class="booking__description">1 x Room</span>
+                                </div>
+                                <!-- /.person-room__text -->
+                            </div>
+                            <!-- /.booking__room -->
+                        </div>
+                        <!-- /.booking__info -->
+                        <div class="booking__call-center">
+                            <span class="booking__heading">Quick Booking</span>
+                            <a class="booking__number" href="tel:12100">
+                                <img src="img/phone/phone.svg" alt="Icon: phone">
+                                <span class="booking__num">12100</span>
+                            </a>
+                        </div>
+                        <!-- /.booking__call-center -->
+                        <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
+                    </div>
+                    <!-- /.booking -->
+                    <div class="map">
+                        <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0413263625383!2d98.29254741515584!3d7.890745494315355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1595327843009!5m2!1sru!2sru" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        aria-hidden="false" 
+                        tabindex="0">
+                        </iframe>
+                    </div>
+                    <!-- /.map -->
+                </div>
+                <!-- /.hotel-right -->
+            </div>
+            <!-- /.hotel-grid -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="newsletter">
+        <div class="newsletter-wrapper">
+            <h2 class="newsletter-title newsletter__title">
+                    subscribe to our
+                    <span class="newsletter-title__strong">Newsletter</span>
+            </h2>
+            <form action="send.php" method="POST" class="form subscribe newsletter-subscribe">
+                <input 
+                type="email" 
+                class="input subscribe__input"
+                placeholder="Your email address"
+                required
+                >
+                <button type="type" class="subscribe__button">Send</button>
+            </form>
+        </div>
+        <!-- /.newsletter-wrapper -->
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2 class="reviews__title">What people thinks about us</h2>
+            <div class="swiper-container reviews-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img 
+                                src="img/reviews-avatar/reviews-avatar-1.jpg" 
+                                alt="Photo: Megan Fox" 
+                                class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Martin Jecson</h3>
+                                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                </div>
+                                <!-- /.reviews-slider__rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+                            </p>
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img 
+                                src="img/reviews-avatar/reviews-avatar-2.jpg" 
+                                alt="Photo: Megan Fox" 
+                                class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Robery Johns</h3>
+                                <span class="reviews-slider__date">Stayed 20 Dec, 2018</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                </div>
+                                <!-- /.reviews-slider__rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum provident ipsa hic blanditiis vel. Eligendi voluptates similique rerum assumenda odit. Repudiandae odit dicta enim obcaecati corporis porro debitis nihil molestias quis dolorum, placeat expedita modi quidem nemo perspiciatis ducimus minima accusamus ea mollitia assumenda in eligendi excepturi rerum repellendus. Saepe? 
+                            </p>
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="reviews-slider__item">
+                            <div class="reviews-slider__profile">
+                                <img 
+                                src="img/reviews-avatar/reviews-avatar-3.jpg" 
+                                alt="Photo: Megan Fox" 
+                                class="reviews-slider__avatar">
+                                <h3 class="reviews-slider__username">Oliver Can</h3>
+                                <span class="reviews-slider__date">Stayed 23 March, 2020</span>
+                                <div class="reviews-slider__rating">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                    <img src="img/star.svg" alt="star">
+                                </div>
+                                <!-- /.reviews-slider__rating -->
+                            </div>
+                            <!-- /.reviews-slider__profile -->
+                            <p class="reviews-slider__text">
+                                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. 
+                            </p>
+                        </div>
+                        <!-- /.reviews-slider__item -->
+                    </div>
+                    <!-- /.swiper-slide -->
+                </div>
+                <!-- /.swiper-wrapper -->
+
+                <div class="reviews-slider__button reviews-slider__button--prev"></div>
+                <div class="reviews-slider__button reviews-slider__button--next"></div>
+            </div>
+            <!-- /.reviews-slider -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="activities">
+        <div class="container">
+            <h2 class="activities__title">Other Activities</h2>
+            <div class="activities-wrapper">
+                <div class="card activities__card" > 
+                    <img src="img/activities/activities-1.jpg" alt="activities" class="card__image">
+                    <h3 class="card__title">The curious corner <br> of chamarel</h3>
+                    <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
+                </div>
+                <!-- /.card -->
+                <div class="card activities__card" > 
+                    <img src="img/activities/activities-2.jpg" alt="activities" class="card__image">
+                    <h3 class="card__title">The curious corner <br> of chamarel</h3>
+                    <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
+                </div>
+                <!-- /.card -->
+                <div class="card activities__card" > 
+                    <img src="img/activities/activities-3.jpg" alt="activities" class="card__image">
+                    <h3 class="card__title">The curious corner <br> of chamarel</h3>
+                    <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
+                </div>
+                <!-- /.card -->
+                <div class="card activities__card" > 
+                    <img src="img/activities/activities-4.jpg" alt="activities" class="card__image">
+                    <h3 class="card__title">The curious corner <br> of chamarel</h3>
+                    <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.activities-wrapper -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <a href="#" class="logo footer__logo"><img src="img/vertical-logo/vertical-logo.svg" alt="Logo: Best Tour Plan" /></a>
+            <div class="footer__list footer__categories">
+              <h3 class="footer__title">ALL CATEGORIES</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">All Deals</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Hotels</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Activities</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Spa Packages</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Hotel Day Packages </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Restaurants </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Fitness </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Rodrigues</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__list -->
+            <div class="footer__list footer__additional">
+              <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Contact Us </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">How does it work?</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Frequently Asked Questions</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Promote your Business on BTP</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__list -->
+            <div class="footer__social-network">
+              <h3 class="footer__title footer__title--inline">Social Network</h3>
+              <div class="footer__social-links">
+                <a href="#" class="footer__link"><img src="img/footer-icon/facebook.svg" alt="Icon: facebook" /></a>
+                <a href="#" class="footer__link"><img src="img/footer-icon/youtube.svg" alt="Icon: youtube" /></a>
+                <a href="#" class="footer__link"><img src="img/footer-icon/instagram.svg" alt="Icon: instagram" /></a>
+              </div>
+              <!-- /.footer__social-links -->
+            </div>
+            <!-- /.footer__sotial-network -->
+    
+            <div class="footer__list footer__legal">
+              <h3 class="footer__title">LEGAL INFORMATION</h3>
+              <ul class="footer__ul">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Terms & Conditions</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Disclaimer</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Cancellation policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__list -->
+    
+            <div class="footer__contact-details">
+              <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+              <p class="footer__text">
+                Feel free to contact us by phone, email or by our contact form
+              </p>
+              <ul class="footer__ul">
+                <li class="footer__item footer__item--mb-2">
+                  <div class="footer__icon-wrapper">
+                    <img src="img/contact-details/map-marker.svg" alt="Icon: map" class="footer__icon" />
+                  </div>
+                  9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
+                  States
+                </li>
+                <li class="footer__item footer__item--mb-2">
+                  <div class="footer__icon-wrapper">
+                    <img src="img/contact-details/phone-call.svg" alt="Icon: contact-phone-call" class="footer__icon" />
+                  </div>
+                  <div class="footer-numbers">
+                    <span>Tel (business hours): <a href="#" class="footer-numbers__link">269 1500</a></span>
+                    <span>Tel (hotline) Monday - Saturday: <a href="#" class="footer-numbers__link">52-56-61-38</a> (08:00
+                      am – 20:00pm)</span>
+                    <span>Tel (hotline) Sunday: <a href="#" class="footer-numbers__link">52-56-61-38</a> (08:00 am – 14:00
+                      pm)</span>
+                  </div>
+                </li>
+                <li class="footer__item footer__item--mb-2">
+                  <div class="footer__icon-wrapper">
+                    <img src="img/contact-details/email.svg" alt="Icon: email" class="footer__icon" />
+                  </div>
+                  <a href="mailto:cherly.lawson@example.com" class="footer-numbers__link">cherly.lawson@example.com</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer__contact-details -->
+    
+            <div class="footer__contact-form">
+              <h3 class="footer__title footer__title--mb-3">
+                Send us a message
+              </h3>
+              <form action="send.php" method="POST" class="footer__form form">
+                <div class="footer__input-group">
+                  <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required />
+                </div>
+                <div class="footer__input-group">
+                  <input type="phone" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+                </div>
+                <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
+                <button class="button footer__button" type="submit">Send</button>
+                <span class="footer__info">* Required Fields</span>
+              </form>
+            </div>
+            <!-- /.footer__contact-form -->
+    
+            <div class="footer-bottom">
+              <div class="footer-bottom-terms">
+                <span class="footer-bottom__item">Disclaimer</span>
+                <span class="footer-bottom__item">Conditions of use</span>
+                <span class="footer-bottom__item">Cancellation policy</span>
+              </div>
+                <img src="img/footer-extra/payment.jpg" alt="Icon: payment" class="footer-bottom__icon" />
+            </div>
+            <!-- /.footer-bottom -->
+          </div>
+          <!-- /.footer-wrapper -->
+        </div>
+        <!-- /.container -->
+      </footer>
+    
+    <div class="modal" id="booking-modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close/close.svg" alt="Icon: close">
+            </a>
+            <h3 class="modal__title modal__mb-3">Booking</h3>
+            <form action="send.php" method="POST" class="form modal__form">
+                <input 
+                    type="text" 
+                    class="input modal__input" 
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                >
+                <input 
+                    type="tel" 
+                    class="input modal__input tel" 
+                    placeholder="Phone Number*" 
+                    name="phone"
+                    required 
+                >
+                <input 
+                    type="email" 
+                    class="input modal__input" 
+                    placeholder="Your email*" 
+                    name="email"
+                    required 
+                >
+                <textarea 
+                    class="message modal__message" 
+                    placeholder="Message"
+                    name="message"></textarea>
+                <button class="button modal__button" type="submit">Send</button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+         </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="activities-modal">
+        <div class="modal__overlay"></div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close/close.svg" alt="Icon: close">
+            </a>
+            <h3 class="modal__title modal__mb-3">Go on vacation</h3>
+            <form action="send.php" method="POST" class="form modal__form">
+                <input 
+                    type="text" 
+                    class="input modal__input" 
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                    minlength="2"
+                >
+                <input 
+                    type="tel" 
+                    class="input modal__input tel" 
+                    placeholder="Phone Number*" 
+                    name="phone"
+                    required 
+                >
+                <input 
+                    type="email" 
+                    class="input modal__input" 
+                    placeholder="Your email*" 
+                    name="email"
+                    required 
+                >
+                <textarea 
+                    class="message modal__message" 
+                    placeholder="Message"
+                    name="message"></textarea>
+                <button class="button modal__button" type="submit">Send</button>
+                <span class="modal__info">* Required Fields</span>
+            </form>
+         </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
